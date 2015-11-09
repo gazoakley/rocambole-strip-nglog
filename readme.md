@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save rocambole-strip-nglog
+$ npm install --save gazoakley/rocambole-strip-nglog
 ```
 
 

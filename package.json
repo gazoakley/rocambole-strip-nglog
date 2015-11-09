@@ -1,13 +1,13 @@
 {
-  "name": "rocambole-strip-console",
+  "name": "rocambole-strip-nglog",
   "version": "1.0.0",
-  "description": "Strip console statements from a rocambole AST",
+  "description": "Strip $log statements from a rocambole AST",
   "license": "MIT",
-  "repository": "sindresorhus/rocambole-strip-console",
+  "repository": "gazoakley/rocambole-strip-nglog",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Gareth Oakley",
+    "email": "gaz@gazoakley.com",
+    "url": "gazoakley.com"
   },
   "engines": {
     "node": ">=0.10.0"
