@@ -1,4 +1,4 @@
-# rocambole-strip-console [![Build Status](https://travis-ci.org/sindresorhus/rocambole-strip-console.svg?branch=master)](https://travis-ci.org/sindresorhus/rocambole-strip-console)
+# rocambole-strip-nglog
 
 > Strip console statements from a [rocambole](https://github.com/millermedeiros/rocambole) AST
 
@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save rocambole-strip-console
+$ npm install --save rocambole-strip-nglog
 ```
 
 
@@ -14,17 +14,18 @@ $ npm install --save rocambole-strip-console
 
 ```js
 const rocambole = require('rocambole');
-const stripconsole = require('rocambole-strip-console');
+const stripNgLog = require('rocambole-strip-nglog');
 
-rocambole.moonwalk('if (true) { console.log("foo"); }', node => {
-	stripConsole(node);
+rocambole.moonwalk('if (true) { $log.debug("foo"); }', node => {
+	stripNgLog(node);
 }).toString();
 //=> 'if (true) { void 0; }'
 ```
 
-To prevent any side-effects, `console.*` is replaced with `void 0` instead of being removed.
+To prevent any side-effects, `$log.*` is replaced with `void 0` instead of being removed.
 
 
 ## License
 
+MIT © [Gareth Oakley](http://gazoakley.com)
 MIT © [Sindre Sorhus](http://sindresorhus.com)
